@@ -11,7 +11,7 @@ Software Engineering student at Thammasat University
 </p>
 
 
-## My Works
+## My Ongoing Project
 
 ### [Mule Account Detector](https://github.com/enivyus/mule-detector)
 **A mini core bank plus a system that catches mule accounts: accounts that receive scam victims' money and pass it on within minutes.**
