@@ -37,7 +37,7 @@ Built end to end: the bank, a streaming detector, a graph analysis step, auto-fr
 
 ---
 
-### [Thailand Electricity & Power Generation LCI Database](https://github.com/enivyus/yoursql-electricity-lci) · [Live demo](https://yoursql.vercel.app/)
+### [Thailand Electricity & Power Generation LCI Database](https://github.com/enivyus/yoursql-electricity-lci) 
 **A database of Thai electricity data where every number can be traced back to the exact table row or spreadsheet cell it came from.**
 
 Team project (2 people) for CN230 Database Systems × MTEC, Thammasat University. My role: PM/BA, SQL Lead and QA Lead.
@@ -49,3 +49,5 @@ Team project (2 people) for CN230 Database Systems × MTEC, Thammasat University
 - **Beyond SQL:** the same data loaded into Neo4j (41 nodes, 33 relationships) gives the same answers as SQL JOINs, and a semantic search prototype (multilingual embeddings + pgvector) scored 2.4/3.
 
 `SQLite` `SQL` `Python` `Neo4j / Cypher` `pgvector` `React` `TypeScript` `Tailwind CSS` `Vercel`
+
+[Live demo website](https://yoursql.vercel.app/)
