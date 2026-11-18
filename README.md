@@ -11,7 +11,7 @@ Software Engineering student at Thammasat University
 </p>
 
 
-## My Ongoing Project
+## My Projects
 
 ### [Mule Account Detector](https://github.com/enivyus/mule-detector)
 **A mini core bank plus a system that catches mule accounts: accounts that receive scam victims' money and pass it on within minutes.**
@@ -34,3 +34,16 @@ Built end to end: the bank, a streaming detector, a graph analysis step, auto-fr
 - **Investigator dashboard:** React + Cytoscape.js, Thai/English, light/dark. A "survey map" design: risk drawn as contour rings, stolen money traced as a route across accounts.
 
 `Java 21` `Spring Boot` `PostgreSQL` `Kafka / Redpanda` `Neo4j` `React` `Cytoscape.js` `Python` `Docker`
+
+### [Thailand Electricity & Power Generation LCI Database](https://github.com/enivyus/yoursql-electricity-lci) · [Live demo](https://yoursql.vercel.app/)
+**A database of Thai electricity data where every number can be traced back to the exact table row or spreadsheet cell it came from.**
+
+Team project (2 people) for CN230 Database Systems × MTEC, Thammasat University. My role: PM/BA, SQL Lead and QA Lead.
+
+- **Every row is traceable:** each value keeps its source ID, its location in the original file (page, table and row, or Excel cell) and the SHA-256 of the downloaded snapshot. Click any number on the website to see where it came from.
+- **A quality gate with no guessing:** 888 rows imported from EPPO statistics and a peer-reviewed LCI study, 870 passed review. Values that cannot be used, such as a misprinted NOx figure, are kept exactly as printed but held out of calculations.
+- **A database that protects itself:** SQLite, 9 tables in 3NF, 18 triggers that block any edit to source values, and an append-only history of every status change with who made it and why. The loader checks hashes, headers, units and foreign keys, and rejects the whole batch on a single error.
+- **Checked against the source:** all 31 LCI values match the PDF, and fuel-by-fuel totals match the published totals in all 97 year and month groups (largest difference 0.09%).
+- **Beyond SQL:** the same data loaded into Neo4j (41 nodes, 33 relationships) gives the same answers as SQL JOINs, and a semantic search prototype (multilingual embeddings + pgvector) scored 2.4/3.
+
+`SQLite` `SQL` `Python` `Neo4j / Cypher` `pgvector` `React` `TypeScript` `Tailwind CSS` `Vercel`
