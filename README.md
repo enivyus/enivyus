@@ -35,6 +35,8 @@ Built end to end: the bank, a streaming detector, a graph analysis step, auto-fr
 
 `Java 21` `Spring Boot` `PostgreSQL` `Kafka / Redpanda` `Neo4j` `React` `Cytoscape.js` `Python` `Docker`
 
+---
+
 ### [Thailand Electricity & Power Generation LCI Database](https://github.com/enivyus/yoursql-electricity-lci) · [Live demo](https://yoursql.vercel.app/)
 **A database of Thai electricity data where every number can be traced back to the exact table row or spreadsheet cell it came from.**
 
