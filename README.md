@@ -51,3 +51,21 @@ Team project (2 people) for CN230 Database Systems × MTEC, Thammasat University
 `SQLite` `SQL` `Python` `Neo4j / Cypher` `pgvector` `React` `TypeScript` `Tailwind CSS` `Vercel`
 
 [Live demo website](https://yoursql.vercel.app/)
+
+---
+
+### [Lock-in Mode](https://github.com/enivyus/Lock-in-Mode)
+**A doodle-style shooter about surviving the semester: shoot down homework, quizzes and the Midterm boss with pencils before the workload buries you.**
+
+Team project (2 people) for SF211 Object-Oriented Programming, Thammasat University.
+
+<img src="assets/lock-in-mode.png" alt="Lock-in Mode menu and gameplay" width="100%" />
+
+- **Built around OOP:** 20 classes in 8 modules. Abstract base classes (`GameObject`, `PowerUp`, `GameState`) define the contract, and one update/draw loop drives every object with no type checks. Adding a new enemy means adding one subclass.
+- **Reusable components:** `Health` and `Weapon` are shared by the player, the enemies and the boss, each with its own settings (the boss's gun reloads in 1.2 s, the player's in 0.25 s).
+- **State machine on a stack:** Menu, Play, Pause and Game Over. Pause is pushed on top of the game, so the game freezes but stays visible underneath.
+- **Event-driven scoring:** collisions post custom Pygame events and a `ScoreManager` observer turns them into a score and a final grade from A to F. The collision code never touches the score.
+- **Gets harder every "week":** every 20 seconds enemies spawn faster (down to one every 0.3 s), the boss returns sooner, and from week 6 enemies can arrive in pairs, so every run ends eventually.
+- **Hand-drawn look:** notebook-paper background, doodle sprites and handwriting fonts. Every image falls back to a version drawn in code if its file is missing.
+
+`Python` `Pygame-ce` `OOP` `Design patterns`
