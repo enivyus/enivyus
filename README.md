@@ -57,8 +57,6 @@ Team project (2 people) for CN230 Database Systems × MTEC, Thammasat University
 ### [Lock-in Mode](https://github.com/enivyus/Lock-in-Mode)
 **A doodle-style shooter about surviving the semester: shoot down homework, quizzes and the Midterm boss with pencils before the workload buries you.**
 
-Team project (2 people) for SF211 Object-Oriented Programming, Thammasat University.
-
 <img src="assets/lock-in-mode.png" alt="Lock-in Mode menu and gameplay" width="100%" />
 
 - **Built around OOP:** 20 classes in 8 modules. Abstract base classes (`GameObject`, `PowerUp`, `GameState`) define the contract, and one update/draw loop drives every object with no type checks. Adding a new enemy means adding one subclass.
