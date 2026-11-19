@@ -40,6 +40,8 @@ Built end to end: the bank, a streaming detector, a graph analysis step, auto-fr
 ### [Thailand Electricity & Power Generation LCI Database](https://github.com/enivyus/yoursql-electricity-lci) 
 **A database of Thai electricity data where every number can be traced back to the exact table row or spreadsheet cell it came from.**
 
+<img src="assets/yoursql-electricity-lci.png" alt="YourSQL website: home page and the trace panel for the CO2 row" width="100%" />
+
 Team project (2 people) for CN230 Database Systems × MTEC, Thammasat University. My role: PM/BA, SQL Lead and QA Lead.
 
 - **Every row is traceable:** each value keeps its source ID, its location in the original file (page, table and row, or Excel cell) and the SHA-256 of the downloaded snapshot. Click any number on the website to see where it came from.
